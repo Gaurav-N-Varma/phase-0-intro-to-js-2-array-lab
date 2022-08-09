@@ -46,9 +46,11 @@ function prependCat(name) {
 // removeLastCat()
 //  7) removes the last cat in the cats array and returns a new array, leaving the cats array unchanged
 function removeLastCat() {
-    const newCats = cats.slice();
-    newCats.pop();
+    const newCats = cats.slice(0, cats.length - 1);
     return newCats;
+    // newCats.pop();
+    // return newCats;
+
 }
 
 // removeFirstCat()
@@ -58,3 +60,4 @@ function removeFirstCat() {
     newCats.shift();
     return newCats;
 }
+
